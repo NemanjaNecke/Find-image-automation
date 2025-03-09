@@ -41,4 +41,34 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 ```
 pip install -r requirements.txt
+```
 
+
+## Usage
+
+>Run the script from the command line, providing the path to the folder containing your images and the name of the output file where the results will be saved:
+
+`python google_lens_book_extractor.py /path/to/images output_results.txt`
+
+**Example**
+
+```
+python google_lens_book_extractor.py ~/Downloads/BookCovers results.txt
+```
+
+This command will process all image files in the ~/Downloads/BookCovers folder and save the output to results.txt.
+
+## How It Works
+
+- Launching Google Lens:
+  - The script navigates to Google Lens using Selenium.
+
+- Image Upload:
+   
+  - It uploads each image to Google Lens by clicking the (upload file) button.
+
+- Result Extraction:
+   - Once the results load, it scans all the links on the page, extracts visible text from each, and determines the most common candidate title along with one corresponding link.
+
+ - Output:
+   - The results are saved in a text file where each line contains the image filename, the extracted candidate title, and the link.

@@ -28,16 +28,17 @@ A command-line tool that automates [Google Lens](https://lens.google.com) to pro
 
 ```
 git clone https://github.com/NemanjaNecke/Find-image-automation.git
-cd google-lens-book-extractor
+cd google-lens-book-extractor```
+
 
 2. **Create a Virtual Environment (optional but recommended):**
 
 ```
 python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+source venv/bin/activate  # On Windows use `venv\Scripts\activate` ```
 
 
-Install Dependencies:
+3. **Install Dependencies:**
 
 
 ```

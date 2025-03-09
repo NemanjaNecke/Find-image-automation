@@ -13,8 +13,6 @@ A command-line tool that automates [Google Lens](https://lens.google.com) to pro
 - **Stealth Automation:**  
   Uses `selenium-stealth` to help mask automated browser behavior.
 
-- **No External Filters:**  
-  Removes previous filtering for OLX and Kupindo links, focusing solely on extracting candidate names from all available links.
 
 ## Prerequisites
 
@@ -28,15 +26,15 @@ A command-line tool that automates [Google Lens](https://lens.google.com) to pro
 
 ```
 git clone https://github.com/NemanjaNecke/Find-image-automation.git
-cd google-lens-book-extractor
-`
+cd Find-image-automation
+```
 
-2. **Create a Virtual Environment (optional but recommended):**
+2. **Create a Virtual Environment:**
 
 ```
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
+```
 
 3. **Install Dependencies:**
 
